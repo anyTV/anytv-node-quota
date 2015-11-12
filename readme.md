@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/anyTV/anytv-node-quota.svg?branch=master)](https://travis-ci.org/anyTV/anytv-node-quota)
+
 AnyTV Middleware for Quota
 =====
 
@@ -16,10 +18,10 @@ const mysql = require('anytv-node-mysql')
 
 ....
 // add db key 'accounts_db' to anytv-node-mysql
-mysq.add('accounts_db', config.ACCOUNTS_DB) 
+mysq.add('accounts_db', config.ACCOUNTS_DB)
 
 // create instance of quota store by passing anytv-node-mysql db instance
-let quota_store = quota.store.create(mysql) 
+let quota_store = quota.store.create(mysql)
 // create instance of quota middleware by passing (<instance of quota_store>, <service name>, <log request>)
 let quota_middleware = quota.middleware(quota_store, 'default', true)
 
