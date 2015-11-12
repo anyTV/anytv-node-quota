@@ -5,13 +5,13 @@ AnyTV Middleware for Quota
 =====
 
 
-####Requirements
+#### Requirements
 ```
 npm install anytv-node-quota --save
 npm install anytv-node-mysql --save
 ```
 
-####How to use
+#### How to use
 ```javascript
 // include packages
 const quota = require('anytv-node-quota')
@@ -19,7 +19,7 @@ const mysql = require('anytv-node-mysql')
 
 ....
 // add db key 'accounts_db' to anytv-node-mysql
-mysq.add('accounts_db', config.ACCOUNTS_DB)
+mysql.add('accounts_db', config.ACCOUNTS_DB)
 
 // create instance of quota store by passing anytv-node-mysql db instance
 let quota_store = quota.store.create(mysql)
