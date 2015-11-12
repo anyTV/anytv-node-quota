@@ -1,3 +1,4 @@
+[![Code Climate](https://codeclimate.com/github/anyTV/anytv-node-quota/badges/gpa.svg)](https://codeclimate.com/github/anyTV/anytv-node-quota)
 [![Build Status](https://travis-ci.org/anyTV/anytv-node-quota.svg?branch=master)](https://travis-ci.org/anyTV/anytv-node-quota)
 
 AnyTV Middleware for Quota

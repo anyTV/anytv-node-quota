@@ -1,8 +1,6 @@
 'use strict';
 
-const http = require('http')
-
-module.exports =  function (store, service = 'default', log_request = false) {
+module.exports = function (store, service = 'default', log_request = false) {
     // create middleware
     return (req, res, next) => {
 
