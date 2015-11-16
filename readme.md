@@ -1,6 +1,7 @@
-[![Code Climate](https://codeclimate.com/github/anyTV/anytv-node-quota/badges/gpa.svg)](https://codeclimate.com/github/anyTV/anytv-node-quota)
 [![Build Status](https://travis-ci.org/anyTV/anytv-node-quota.svg?branch=master)](https://travis-ci.org/anyTV/anytv-node-quota)
-
+[![Dependency Status](https://david-dm.org/anyTV/anytv-node-quota.svg)](https://david-dm.org/anyTV/anytv-node-quota)
+[![devDependency Status](https://david-dm.org/anyTV/anytv-node-quota/dev-status.svg)](https://david-dm.org/anyTV/anytv-node-quota#info=devDependencies)
+[![Code Climate](https://codeclimate.com/github/anyTV/anytv-node-quota/badges/gpa.svg)](https://codeclimate.com/github/anyTV/anytv-node-quota)
 AnyTV Middleware for Quota
 =====
 
