@@ -10,7 +10,7 @@ module.exports = function (store, service = 'default', log_request = false) {
 
             // if no access_token return error 
             if (!access_token.length) {
-                res.json({error: 'No access token.'})
+                return res.json({error: 'No access token.'})
             }
 
             store.get_client_id(access_token, check_limit)
