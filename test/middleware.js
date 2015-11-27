@@ -54,7 +54,7 @@ const store = {
         callback(null, is_exceed)
     },
     log_request(client_id, service, weight, path, callback = () => null) {
-        callback()        
+        callback()
     }
 }
 
@@ -162,7 +162,7 @@ describe('Middleware', () => {
             res.json({success: true})
         })
 
-        let data = JSON.parse(res._getData())
+        let data = res._getData()
         assert.typeOf(data.error, 'string')
         assert.equal(data.error, 'Quota exceeded.')
     })

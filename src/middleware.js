@@ -10,7 +10,8 @@ module.exports = function (store, service = 'default', log_request = false) {
 
             // if no access_token return error
             if (!access_token.length) {
-                return res.warn(400, {error: 'No access token.'})
+                return res.status(400)
+                        .send({error: 'No access token.'})
             }
 
             store.get_client_id(access_token, check_limit)
@@ -18,16 +19,19 @@ module.exports = function (store, service = 'default', log_request = false) {
 
         function check_limit(err, client_id) {
             if (err) {
-                return res.warn(400, {error: err})
+                return res.status(400)
+                        .send({error: err})
             }
 
             store.exceed_limit(client_id, service, (err, exceeded) => {
                 if (err) {
-                    return res.warn(500, {error: err})
+                    return res.status(500)
+                            .send({error: err})
                 }
 
                 if (exceeded) {
-                    return res.warn(400, {error: 'Quota exceeded.'})
+                    return res.status(400)
+                            .send({error: 'Quota exceeded.'})
                 }
 
                 bind_quota(client_id)

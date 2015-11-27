@@ -1,6 +1,6 @@
 {
   "name": "anytv-node-quota",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "express middleware for handling api quota",
   "main": "lib/index.js",
   "repository": {
